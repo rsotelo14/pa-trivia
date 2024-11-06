@@ -1,0 +1,85 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentación del Proyecto de Trivia</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 1em 0;
+            text-align: center;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2 {
+            color: #4CAF50;
+        }
+        code {
+            background-color: #eee;
+            padding: 4px 8px;
+            border-radius: 4px;
+        }
+        pre {
+            background-color: #f4f4f9;
+            padding: 10px;
+            border-radius: 5px;
+            overflow-x: auto;
+            border-left: 4px solid #4CAF50;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Documentación del Proyecto de Trivia</h1>
+    </header>
+    <div class="container">
+        <h2>Descripción</h2>
+        <p>Este proyecto es un juego de trivia implementado en Python que permite al usuario responder preguntas de opción múltiple.</p>
+        
+        <h2>Instrucciones de Uso</h2>
+        <p>Para ejecutar el programa desde la terminal, use el siguiente comando:</p>
+        <pre><code>python3 trivia.py</code></pre>
+        <p>El programa mostrará una pregunta junto con opciones posibles. El usuario debe ingresar <strong>1</strong>, <strong>2</strong>, o <strong>3</strong> para seleccionar su respuesta.</p>
+        
+        <h3>Ejemplo de Interacción</h3>
+        <pre><code>
+¿Cuál es la moneda oficial de Japón?
+1. "Yen"
+2. "Dólar"
+3. "Euro"
+Ingrese su respuesta: 1
+        </code></pre>
+
+        <h2>Estructura del Proyecto</h2>
+        <ul>
+            <li><code>trivia.py</code>: Archivo principal que contiene la lógica del juego de trivia.</li>
+            <li><code>trivia_questions.csv</code>: Archivo CSV que contiene las preguntas y respuestas del juego.</li>
+            <li><code>README.txt</code>: Archivo de documentación que describe el funcionamiento del proyecto.</li>
+        </ul>
+
+        <h2>Documentación de Funciones</h2>
+        <ul>
+            <li><strong>check_file_exists</strong>: Decorador que verifica si el archivo especificado existe antes de ejecutar la función decorada. Si el archivo no se encuentra, se muestra un mensaje de error.</li>
+            <li><strong>load_data(file_path)</strong>: Carga los datos desde un archivo CSV. Abre el archivo <code>trivia_questions.csv</code>, lee las preguntas, las mezcla aleatoriamente y devuelve una lista de preguntas.</li>
+            <li><strong>process_questions(q_and_as, amount=5)</strong>: Procesa las preguntas y devuelve un generador que presenta cada pregunta, sus opciones, la respuesta correcta y el índice de la respuesta correcta.</li>
+            <li><strong>show_question(q_and_a)</strong>: Muestra una pregunta y sus opciones en la consola, permitiendo al usuario ver las posibles respuestas.</li>
+        </ul>
+    </div>
+</body>
+</html>
