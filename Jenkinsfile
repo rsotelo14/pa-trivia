@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Clonar Repositorio') {
             steps {
-                git url: 'https://github.com/rsotelo14/pa-trivia.git', branch: 'main'
+                git url: 'https://github.com/rsotelo14/pa-trivia.git', branch: 'master'
             }
         }
         stage('Ejecutar Pruebas') {
