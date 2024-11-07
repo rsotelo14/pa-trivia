@@ -8,7 +8,7 @@ pipeline {
         }
         stage('Ejecutar Pruebas') {
             steps {
-                sh '/usr/bin/python3 -m unittest discover -s test'
+                sh '/usr/bin/python3 -m unittest test.py'
             }
         }
         stage('Generar Documentación') {
