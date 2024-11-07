@@ -2,6 +2,9 @@ Programación Avanzada
 
 Entregable 1: Programación funcional
 
+
+
+
 Estudiante: Rodrigo Sotelo
 CI : 5452462-0
 
