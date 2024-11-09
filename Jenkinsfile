@@ -13,8 +13,8 @@ pipeline {
         }
 		stage('Generar Documentación') {
     		steps {
-        		sh 'cd src && python3 -m pydoc -w main'
-        		sh 'mv src/main.html /var/www/html/documentins/trivia.html'
+        		sh 'python3 -m pydoc -w trivia'
+        		sh 'mv trivia.html /var/www/html/documentins/trivia.html'
    			}
 		}
 
