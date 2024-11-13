@@ -87,7 +87,7 @@ def show_result_message(is_correct, correct_answer=None):
 show_correct_message = partial(show_result_message, True)
 show_incorrect_message = partial(show_result_message, False)
 
-# Monad for the score 
+# Monad for the score prueba demo 
 class ScoreMonad:
     def __init__(self, score):
         self.score = score
